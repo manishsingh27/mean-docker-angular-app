@@ -8,8 +8,6 @@ import { JwtInterceptor } from './jwt-interceptor';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RankComponent } from './rank.component';
 
-
-
 @NgModule({
   imports: [
     CommonModule

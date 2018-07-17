@@ -8,7 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
 import { UsersModule } from './users/users.module';
-import { RankComponent } from './shared/rank.component';
 
 @NgModule({
   declarations: [

@@ -9,7 +9,6 @@ import { UserDetailGuard } from './user-detail.guard';
 
 @NgModule({
   imports: [
-    CommonModule,
     RouterModule.forChild([
       { path: 'users', component: UserListComponent, canActivate: [AuthGuard] },
       {

@@ -35,7 +35,7 @@ export class UserDetailComponent implements OnInit {
   }
 
   onRatingClicked(message: string): void {
-    this.pageTitle = 'Product List: ' + message;
+    this.pageTitle = 'User Details: ' + message;
   }
 
   onBack(): void {
