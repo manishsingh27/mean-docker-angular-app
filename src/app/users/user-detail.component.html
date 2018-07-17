@@ -8,12 +8,12 @@
     <div class='row'>
       <div class='col-md-8'>
         <div class='row'>
-          <div class='col-md-4'>Name:</div>
+          <div class='col-md-4'>FName:</div>
           <div class='col-md-8'>{{user.firstName}}</div>
         </div>
         <div class='row'>
-          <div class='col-md-4'>Code:</div>
-          <div class='col-md-8'>{{user.lastName | lowercase: '-'}}</div>
+          <div class='col-md-4'>LName:</div>
+          <div class='col-md-8'>{{user.lastName | lowercase | convertToSpace: '-'}}</div>
         </div>
       </div>
     </div>

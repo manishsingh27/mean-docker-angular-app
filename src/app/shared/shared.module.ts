@@ -7,6 +7,7 @@ import { ErrorInterceptor } from './error-interceptor';
 import { JwtInterceptor } from './jwt-interceptor';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RankComponent } from './rank.component';
+import { ConvertToSpacePipe } from './convert-to-space.pipe';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { RankComponent } from './rank.component';
   ],
   declarations: [
     NotificationComponent,
-    RankComponent
+    RankComponent,
+    ConvertToSpacePipe
   ],
   exports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { RankComponent } from './rank.component';
     FormsModule,
     ReactiveFormsModule,
     NotificationComponent,
-    RankComponent
+    RankComponent,
+    ConvertToSpacePipe
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

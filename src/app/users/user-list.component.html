@@ -1,15 +1,22 @@
 <h1>Hi {{currentUser.firstName}}!</h1>
 
 <h3>Registered users:</h3>
+<div class='row'>
+    <div class='col-md-4'>FilterBy LName:</div>
+    <div class='col-md-4'>
+        <input type='text' [(ngModel)]='listFilter' />
+    </div>
+</div>
 <ul>
-    <li *ngFor="let user of users">
+    <li *ngFor="let user of filteredUsers">
         <a [routerLink]="['/users', user.id]">
-          {{ user.username }}
+            {{ user.username }}
         </a>
 
-        ({{user.firstName}} {{user.lastName}})
-        
-        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+        ({{user.firstName}} {{user.lastName}}) -
+        <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
     </li>
 </ul>
-<p><a [routerLink]="['/login']">Logout</a></p>
+<p>
+    <a [routerLink]="['/login']">Logout</a>
+</p>

@@ -5,7 +5,7 @@ import { Observable, of, throwError } from 'rxjs';
 import { delay, mergeMap, materialize, dematerialize } from 'rxjs/operators';
 
 @Injectable()
-export class FakeBackedInterceptor {
+export class FakeBackedInterceptor implements HttpInterceptor {
 
     constructor() { }
 
