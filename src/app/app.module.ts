@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
+import { UsersModule } from './users/users.module';
+import { RankComponent } from './shared/rank.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { RegisterModule } from './register/register.module';
       { path: '**', redirectTo: 'home', pathMatch: 'full'}
   ]),
   LoginModule,
-  RegisterModule
+  RegisterModule,
+  UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
